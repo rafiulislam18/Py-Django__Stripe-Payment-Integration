@@ -29,7 +29,7 @@ urlpatterns = [
 
     # Config URLs for custom apps
     path('auth/', include('apps.authentication.urls')),
-    # path('stripe/', include('apps.stripe_pay.urls')),
+    path('stripe/', include('apps.stripe_pay.urls')),
 
     # Config URLs for Swagger
     path('swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),  # example path: domain/swagger.json/
